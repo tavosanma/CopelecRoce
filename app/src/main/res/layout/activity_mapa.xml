@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapLayout"
+    android:background="@color/rojo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mapa">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="575dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context=".Mapa" />
+
+    <Button
+        android:id="@+id/guardarmapa"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/map"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="-5dp"
+        android:background="@color/rojo"
+        android:text="@string/guardar"
+        android:visibility="invisible"
+        android:textStyle="bold" />
+
+
+    <Chronometer
+        android:id="@+id/cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/comenzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/pause"
+        android:layout_marginStart="116dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Comenzar"
+        android:textColor="@color/blanco" />
+    <Button
+        android:id="@+id/reanudar"
+        android:textColor="@color/blanco"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="496dp"
+        android:text="Reanudar"
+        android:visibility="invisible"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/reset"
+        android:layout_marginStart="18dp"
+        android:visibility="invisible"
+        android:background="@color/colorPrimaryDark"
+        android:text="Pausar"
+        android:textColor="@color/blanco" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="215dp"
+        android:visibility="invisible"
+        android:layout_marginTop="495dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Reiniciar"
+        android:textColor="@color/blanco" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/blanco"
+    android:layout_height="wrap_content">
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/nombrearchivotext"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre del archivo"
+        android:inputType="text"
+        android:textColorHint="@color/rojo"
+        android:textStyle="bold" />
+
+    <Button
+        android:text="directorio"
+        android:id="@+id/dir"
+        android:textColor="@color/azul"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/archivoconsultatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Consultar"
+        android:textColor="@color/rojo" />
+
+
+</LinearLayout>

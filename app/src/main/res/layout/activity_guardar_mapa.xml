@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuardarMapa">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:layout_gravity="center"
+    android:textColor="@color/colorPrimaryDark"
+    android:text="Registrando Información"/>
+    <EditText
+        android:id="@+id/personacargo"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Persona a cargo"
+        android:inputType="textPersonName|textCapWords"
+        android:textColorHint="@color/rojo" />
+
+    <EditText
+        android:id="@+id/camioncargo"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Camión a cargo"
+        android:inputType="text"
+        android:textColorHint="@color/rojo" />
+    <EditText
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/rojo"
+        android:inputType="text|textCapWords"
+        android:hint="Título Roce"
+        android:id="@+id/titulo"/>
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="264dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Descripción Roce"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/rojo" />
+
+    <EditText
+        android:id="@+id/nombrearchivo"
+        android:layout_width="266dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre de archivo"
+        android:layout_marginBottom="5dp"
+        android:inputType="text"
+        android:textColorHint="@color/rojo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botonfoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Fotografía" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/textimage"
+        android:layout_width="354dp"
+        android:layout_height="102dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/image" />
+    <Button
+        android:id="@+id/guardartodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:text="Guardar"
+        android:textColor="@color/rojo" />
+
+</LinearLayout>

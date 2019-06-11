@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name" translatable="false">Copelec Roce</string>
+
+    <string name="mapa" translatable="false">Mapa Copelec</string>
+    <string name="guardar">Guardar</string>
+    <string name="title_activity_mapa_hecho">Map</string>
+    <string name="title_activity_mapa_kmz">Map</string>
+    <string name="title_activity_inicio_menu">InicioMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Roces Copelec</string>
+    <string name="nav_header_subtitle">www.copelec.cl</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
